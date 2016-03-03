@@ -90,14 +90,14 @@ class FlashMessage extends \lithium\core\StaticObject {
 	 * @return object Returns the passed `$controller` instance.
 	 */
 	public static function bindTo($controller, array $options = array()) {
-		$controller->applyFilter('redirect', function($self, $params, $chain) use ($options) {
+		\lithium\aop\Filters::apply($controller, 'redirect', function($params, $next) use ($options) {
 			$options =& $params['options'];
 
 			if (isset($params['options']['message'])) {
 				FlashMessage::write($params['options']['message']);
 				unset($params['options']['message']);
 			}
-			return $chain->next($self, $params, $chain);
+			return $next($params);
 		});
 
 		return $controller;
