@@ -21,7 +21,7 @@
         "composer/installers": "*"
     },
     "suggest": {
-        "UnionOfRAD/lithium": "Lithium is required for this plugin."
+        "UnionOfRAD/lithium": "Lithium 1.1 is required for this plugin."
     },
     "minimum-stability": "stable"
 }
