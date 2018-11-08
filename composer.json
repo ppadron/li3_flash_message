@@ -1,5 +1,5 @@
 {
-    "name": "gavd/li3_flash_message",
+    "name": "ppadron/li3_flash_message",
     "description": "The Flash Message plugin  for Lithium provides a straightforward interface for displaying status messages to the user.",
     "type": "lithium-library",
     "license": "MIT",
@@ -15,7 +15,13 @@
             "email": "gavin@radify.io",
             "homepage": "http://radify.io",
             "role": "Maintainer of a fork"
-        }
+        },
+        {
+            "name": "pedro Padron",
+            "email": "pedro@templateria.com",
+            "homepage": "https://templateria.com",
+            "role": "Maintainer of a fork"
+	}
     ],
     "require": {
         "composer/installers": "*"
